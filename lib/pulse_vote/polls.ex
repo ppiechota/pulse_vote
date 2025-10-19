@@ -93,20 +93,20 @@ defmodule PulseVote.Polls do
   end
 
   @doc """
-  Checks if a session has already voted on a poll.
+  Checks if a user has already voted on a poll.
   """
-  def has_voted?(poll_id, session_id) do
+  def has_voted?(poll_id, user_id) do
     Vote
-    |> where([v], v.poll_id == ^poll_id and v.voter_session_id == ^session_id)
+    |> where([v], v.poll_id == ^poll_id and v.user_id == ^user_id)
     |> Repo.exists?()
   end
 
   @doc """
-  Gets a vote by poll_id and session_id.
+  Gets a vote by poll_id and user_id.
   """
-  def get_vote_by_session(poll_id, session_id) do
+  def get_vote_by_user(poll_id, user_id) do
     Vote
-    |> where([v], v.poll_id == ^poll_id and v.voter_session_id == ^session_id)
+    |> where([v], v.poll_id == ^poll_id and v.user_id == ^user_id)
     |> Repo.one()
   end
 

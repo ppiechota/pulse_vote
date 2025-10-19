@@ -10,11 +10,15 @@
 - [ ] Create basic layout template
 
 ## Phase 2: Core Data Models
-- [ ] Create Poll schema (title, description, options as embedded schema, created_at)
-- [ ] Create Option embedded schema (id, text, vote_count)
-- [ ] Create Vote schema (poll_id, option_id, voter_session_id, created_at)
-- [ ] Run migrations
-- [ ] Add basic validations
+- [x] Create Poll schema (title, description, options as embedded schema, created_at)
+- [x] Create Option embedded schema (id, text, vote_count)
+- [x] Create Vote schema (poll_id, option_id, voter_session_id, created_at)
+- [x] Run migrations
+- [x] Add basic validations
+- [x] Add User authentication with phx.gen.auth
+- [x] Update Vote schema to use user_id instead of voter_session_id
+- [x] Add user_id to Poll schema for tracking poll creator
+- [x] Run new migrations
 
 ## Phase 3: Poll Creation
 - [ ] Create poll creation LiveView
