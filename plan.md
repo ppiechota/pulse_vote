@@ -26,6 +26,9 @@
 - [x] Add dynamic option inputs (add/remove options)
 - [x] Implement poll creation logic
 - [x] Add basic validation and error handling
+- [x] Integrate poll creation form into PollLive.Show (handles both /polls/new and /polls/:id)
+- [x] Add form validation with real-time feedback
+- [x] Implement add/remove option functionality with minimum 2, maximum 10 options
 
 ## Phase 4: Voting Interface
 - [x] Create poll voting LiveView
@@ -42,11 +45,13 @@
 - [x] Display total votes and percentages
 
 ## Phase 6: Polish & Features
-- [ ] Add poll listing page
-- [ ] Implement poll sharing (URLs)
-- [ ] Add basic styling and animations
-- [ ] Show "Thanks for voting" states
+- [x] Add poll listing page
+- [x] Implement poll sharing (URLs)
+- [x] Add basic styling and animations
+- [x] Show "Thanks for voting" states
 - [ ] Add poll expiration (optional)
+- [ ] Improve navigation and layout
+- [ ] Add better error handling
 
 ## Phase 7: Testing & Refinement
 - [ ] Test real-time updates with multiple browsers
@@ -56,8 +61,8 @@
 - [ ] Final styling touches
 
 ## Current Status
-**Phase:** Not Started  
-**Next Action:** Create new Phoenix app
+**Phase:** Phase 6 - Polish & Features
+**Next Action:** Improve navigation and layout, add better error handling
 
 ## Notes
 - Keep it simple but satisfying
