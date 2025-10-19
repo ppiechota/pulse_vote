@@ -20,7 +20,15 @@ defmodule PulseVoteWeb.Router do
   scope "/", PulseVoteWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", PollLive.Index, :index
+    live "/polls", PollLive.Index, :index
+    live "/polls/:id", PollLive.Show, :show
+  end
+
+  scope "/", PulseVoteWeb do
+    pipe_through [:browser, :require_authenticated_user]
+
+    live "/polls/new", PollLive.Index, :new
   end
 
   # Other scopes may use custom stacks.

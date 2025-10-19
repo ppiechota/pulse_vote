@@ -21,25 +21,25 @@
 - [x] Run new migrations
 
 ## Phase 3: Poll Creation
-- [ ] Create poll creation LiveView
-- [ ] Build form for poll title/description
-- [ ] Add dynamic option inputs (add/remove options)
-- [ ] Implement poll creation logic
-- [ ] Add basic validation and error handling
+- [x] Create poll creation LiveView
+- [x] Build form for poll title/description
+- [x] Add dynamic option inputs (add/remove options)
+- [x] Implement poll creation logic
+- [x] Add basic validation and error handling
 
 ## Phase 4: Voting Interface
-- [ ] Create poll voting LiveView
-- [ ] Display poll title and options
-- [ ] Implement voting buttons
-- [ ] Store votes with session tracking
-- [ ] Prevent duplicate voting per session
+- [x] Create poll voting LiveView
+- [x] Display poll title and options
+- [x] Implement voting buttons
+- [x] Store votes with user tracking
+- [x] Prevent duplicate voting per user
 
 ## Phase 5: Real-time Results
-- [ ] Add PubSub for real-time updates
-- [ ] Broadcast vote updates to all viewers
-- [ ] Create animated progress bars
-- [ ] Show live vote counts
-- [ ] Display total votes and percentages
+- [x] Add PubSub for real-time updates
+- [x] Broadcast vote updates to all viewers
+- [x] Create animated progress bars
+- [x] Show live vote counts
+- [x] Display total votes and percentages
 
 ## Phase 6: Polish & Features
 - [ ] Add poll listing page
@@ -63,3 +63,4 @@
 - Keep it simple but satisfying
 - Focus on the real-time magic
 - Make voting feel instant and responsive
+- Run `mix compile` after each major change to catch errors early
